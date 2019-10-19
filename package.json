@@ -1,0 +1,26 @@
+{
+  "name": "react-experiment",
+  "version": "1.0.11",
+  "description": "A React component to load Toggles experiments and render active or inactive children.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makeprogress/react-experiment"
+  },
+  "main": "node_modules/@toggles/react-experiment/dist/index.js",
+  "module": "node_modules/@toggles/react-experiment/dist/index.js",
+  "type": "module",
+  "keywords": [
+    "a|b",
+    "experiment",
+    "feature",
+    "flag",
+    "flipper",
+    "react",
+    "toggle"
+  ],
+  "author": "makeprogress",
+  "license": "MIT",
+  "dependencies": {
+    "@toggles/react-experiment": "1.0.11"
+  }
+}
