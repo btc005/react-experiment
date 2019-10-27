@@ -21,6 +21,6 @@
   "author": "makeprogress",
   "license": "MIT",
   "dependencies": {
-    "@toggles/react-experiment": "1.0.11"
+    "@toggles/react-experiment": "1.1.0"
   }
 }
