@@ -6,9 +6,7 @@
     "type": "git",
     "url": "https://github.com/makeprogress/react-experiment"
   },
-  "main": "node_modules/@toggles/react-experiment/dist/index.js",
-  "module": "node_modules/@toggles/react-experiment/index.js",
-  "type": "module",
+  "main": "index.js",
   "keywords": [
     "a|b",
     "experiment",
@@ -20,6 +18,9 @@
   ],
   "author": "makeprogress",
   "license": "MIT",
+  "scripts": {
+    "postinstall": "node ./postinstall.js"
+  },
   "dependencies": {
     "@toggles/react-experiment": "2.0.0"
   }
