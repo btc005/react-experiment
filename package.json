@@ -22,6 +22,6 @@
     "postinstall": "node ./postinstall.js"
   },
   "dependencies": {
-    "@toggles/react-experiment": "2.0.0"
+    "@toggles/react-experiment": "2.0.2"
   }
 }
