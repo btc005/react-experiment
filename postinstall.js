@@ -2,6 +2,10 @@
 
 var fs = require('fs')
 
-var dist = fs.readFileSync(require.resolve('@toggles/react-experiment/dist/index.js'), 'utf8')
+var main = fs.readFileSync(require.resolve('@toggles/react-experiment/dist/main.js'), 'utf8')
+var mainMin = fs.readFileSync(require.resolve('@toggles/react-experiment/dist/main.min.js'), 'utf8')
+var module = fs.readFileSync(require.resolve('@toggles/react-experiment/dist/module.js'), 'utf8')
 
-fs.writeFileSync('index.js', dist)
+fs.writeFileSync('main.js', main)
+fs.writeFileSync('main.min.js', mainMin)
+fs.writeFileSync('module.js', module)
