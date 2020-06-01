@@ -1,4 +1,4 @@
-# @toggles/react-experiment
+# react-experiment
 
 A React component to load Toggles experiments and render active or inactive children.
 
@@ -7,7 +7,7 @@ A React component to load Toggles experiments and render active or inactive chil
 Install with [npm](https://www.npmjs.com/).
 
 ```sh
-$ npm i @toggles/experiments @toggles/react-experiment
+$ npm i @toggles/experiments react-experiment
 ```
 
 Please note the peer dependency, `@toggles/experiments`, which will allow you to load experiments from the Toggles API.
@@ -19,12 +19,12 @@ Once this is complete, you can add an experiment provider to your app:
 
 ```jsx
 import React from 'react'
-import Experiment from '@toggles/react-experiment'
+import Experiment from 'react-experiment'
 
 const MyApp = () => <div>
   <Experiment.Provider
     apiKey="KEY"
-    context={{uniqueId: "test.user@toggles.app"}}
+    context={{uniqueId: "test.user@toggles.co"}}
     rapidAPIKey="KEY"
   >
     <SomeComponent />
@@ -62,7 +62,7 @@ If you need access to raw experiments, you may use the `withExperiments` connect
 
 ```jsx
 import React from 'react'
-import {withExperiments} from '@toggles/react-experiment'
+import {withExperiments} from 'react-experiment'
 
 export const AlwaysBlue = withExperiments({experiments}) => {
   return <div>
@@ -99,7 +99,7 @@ Experiments will be made available with name, description, uuid, and active/inac
 
 ## Contributing
 
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/Joe%20Groseclose/react-experiment/issues).
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/btc005/react-experiment/issues).
 
 ## License
 
