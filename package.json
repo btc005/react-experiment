@@ -24,7 +24,7 @@
   },
   "scripts": {
     "postinstall": "node ./postinstall.js",
-    "prepublishOnly": "node ./postinstall.js"
+    "prepublishOnly": "rm -f main.js main.min.js module.js"
   },
   "dependencies": {
     "@toggles/react-experiment": "2.1.0"
