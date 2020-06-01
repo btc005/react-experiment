@@ -13,7 +13,8 @@
     "react",
     "toggle"
   ],
-  "main": "index.js",
+  "main": "main.js",
+  "module": "module.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/makeprogress/react-experiment"
@@ -22,7 +23,8 @@
     "url": "https://github.com/makeprogress/react-experiment/issues"
   },
   "scripts": {
-    "postinstall": "node ./postinstall.js"
+    "postinstall": "node ./postinstall.js",
+    "prepublishOnly": "node ./postinstall.js"
   },
   "dependencies": {
     "@toggles/react-experiment": "2.1.0"
